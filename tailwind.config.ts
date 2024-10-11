@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const colors = require('tailwindcss/colors')
 
 const config: Config = {
     darkMode: ["class"],
@@ -8,6 +9,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+	colors: {
+		'shade1' : '#FF6500',
+		'shade2': '#1E3E62',
+		'shade3': '#0B192C',
+		'shade4': '#000000',
+		...colors
+	},
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',

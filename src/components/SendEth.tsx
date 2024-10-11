@@ -56,7 +56,8 @@ const SendEth = () => {
     }
 
   return (
-    <div className='max-w-[500px] py-10 px-14 rounded-xl bg-gradient-to-r from-[#43cea2] to-[#185a9d] text-black'>
+    <div className='md:w-[500px] py-10 px-14 rounded-xl text-white border-2 border-[#1E3E62]
+     hover:bg-[#0B192C]/20 focus:bg-[#0B192C]/20'>
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
             <FormField
@@ -102,7 +103,7 @@ const SendEth = () => {
                 </FormItem>
                 )}
             />
-            <Button type="submit" className='w-full'>Send ETH</Button>
+            <Button type="submit" className='w-full hover:bg-gray-900'>Send ETH</Button>
             </form>
         </Form>
     </div>

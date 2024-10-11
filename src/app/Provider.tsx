@@ -42,3 +42,4 @@ const Provider = ({ children }: Readonly<{ children: ReactNode }>) => {
 };
 
 export default Provider;
+export { config };
